@@ -1,0 +1,97 @@
+@import"~bootstrap/dist/css/bootstrap";
+@import'home';
+
+:root {
+    --main-red: #DA2C38;
+    --main-dark-green: #226F54;
+    --main-light-green: #87C38F;
+    --main-light-yellow: #F4F0BB;
+    --main-dark-brown: #43291F;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* NAVBAR */
+
+.nav-link {
+    color: black;
+}
+
+.navbar {
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    color: var(--main-light-yellow);
+    z-index: 100;
+    transition: background-color 1s ease 0s;
+}
+
+.navbar-default .navbar-brand {
+    margin-top: 10px;
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    margin: 10px 5px 5px 5px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+    color: black;
+    border: 1px solid black;
+}
+.navbar-default .navbar-nav > li > a:visited {
+    color: black    ;
+    text-decoration: none;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    color: black;   
+}
+.navbar-default .navbar-toggler {
+    border-color: black;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: var(--main-dark-green);
+}
+.navbar-default .navbar-toggle .icon-bar {
+    color: var(--main-light-green);
+    background-color: var(--main-light-green);
+}
+.navbar-default .navbar-collapse.collapse.in ul {
+    background-color: var(--main-dark-green);
+}
+  /* Solid class attached on scroll past first section */
+.navbar.solid {
+    background-color: var(--main-dark-green);
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 4px grey;
+}
+.navbar.solid .navbar-brand {
+    color: var(--main-light-green);
+    transition: color 1s ease 0s;
+}
+.navbar.solid .navbar-nav > li > a {
+    color: var(--main-light-green);
+    transition: color 1s ease 0s;
+}
+.navbar-toggler-icon{
+    color: black;
+}
+
+.masthead {
+    background-image: url("/media/masthead-chilli.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.masthead-title {
+    margin-right: 50px;
+}
